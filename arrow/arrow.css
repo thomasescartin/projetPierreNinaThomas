@@ -1,0 +1,13 @@
+body {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+	margin: 0px;
+	justify-content: center;
+}
+
+#arrow {
+	background-color: azure;
+	flex-basis: 30%;
+}
