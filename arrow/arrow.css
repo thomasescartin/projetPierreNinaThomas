@@ -1,0 +1,9 @@
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+#arrow {
+	background-color: azure;
+	flex-basis: 30%;
+}
