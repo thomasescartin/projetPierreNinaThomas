@@ -8,6 +8,18 @@ function expandcircle(e) {
 	} else if (e.classList.contains("evenDown")) {
 		expandEvenDown(e);
 	}
+
+	let right_panel = e.children[1];
+	console.log("coucou");
+	console.log(right_panel);
+
+	if (right_panel.classList.contains("hidden")) {
+		right_panel.classList.remove("hidden");
+	} else {
+		right_panel.classList.add("hidden");
+	}
+
+	// if(right_panel.classList.contains("hidden"))
 }
 
 function expandOdd(e) {
