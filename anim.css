@@ -1,6 +1,6 @@
 :root {
 	--circle-size: 30px;
-	--circle-expanded-size: 200px;
+	--circle-expanded-size: 250px;
 	--circle-odd-delta: 200%;
 	--circle-even-delta: 350%;
 }
