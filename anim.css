@@ -1,8 +1,16 @@
 :root {
 	--circle-size: 30px;
 	--circle-expanded-size: 200px;
-	--circle-odd-delta: 300%;
-	--circle-even-delta: 700%;
+	--circle-odd-delta: 200%;
+	--circle-even-delta: 350%;
+}
+
+/* CONTAINER */
+
+.buttonContainer {
+	position: relative;
+	height: 80px;
+	width: 80px;
 }
 
 /* CIRCLE */

@@ -1,27 +1,43 @@
 function expandcircle(e) {
 	if (e.classList.contains("odd")) {
-		if (e.classList.contains("expandedOdd")) {
-			e.classList.remove("expandedOdd");
-		} else {
-			e.classList.add("expandedOdd");
-		}
+		expandOdd(e);
 	} else if (e.classList.contains("even")) {
-		if (e.classList.contains("expandedEven")) {
-			e.classList.remove("expandedEven");
-		} else {
-			e.classList.add("expandedEven");
-		}
+		expandEven(e);
 	} else if (e.classList.contains("oddDown")) {
-		if (e.classList.contains("expandedOddDown")) {
-			e.classList.remove("expandedOddDown");
-		} else {
-			e.classList.add("expandedOddDown");
-		}
+		expandOddDown(e);
 	} else if (e.classList.contains("evenDown")) {
-		if (e.classList.contains("expandedEvenDown")) {
-			e.classList.remove("expandedEvenDown");
-		} else {
-			e.classList.add("expandedEvenDown");
-		}
+		expandEvenDown(e);
+	}
+}
+
+function expandOdd(e) {
+	if (e.classList.contains("expandedOdd")) {
+		e.classList.remove("expandedOdd");
+	} else {
+		e.classList.add("expandedOdd");
+	}
+}
+
+function expandEven(e) {
+	if (e.classList.contains("expandedEven")) {
+		e.classList.remove("expandedEven");
+	} else {
+		e.classList.add("expandedEven");
+	}
+}
+
+function expandOddDown(e) {
+	if (e.classList.contains("expandedOddDown")) {
+		e.classList.remove("expandedOddDown");
+	} else {
+		e.classList.add("expandedOddDown");
+	}
+}
+
+function expandEvenDown(e) {
+	if (e.classList.contains("expandedEvenDown")) {
+		e.classList.remove("expandedEvenDown");
+	} else {
+		e.classList.add("expandedEvenDown");
 	}
 }
