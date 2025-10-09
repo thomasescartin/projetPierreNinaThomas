@@ -9,7 +9,6 @@
 
 .buttonContainer {
 	position: relative;
-	background-color: red;
 	flex-grow: 1;
 }
 
