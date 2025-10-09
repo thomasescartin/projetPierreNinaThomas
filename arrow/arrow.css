@@ -8,20 +8,20 @@ body {
 }
 
 #arrow {
-  background-color: red;
-  height: 30%;
+  background-color: #2f8011;
+  height: 20%;
   width: 100%;
 }
 
 header {
-  background-color: pink;
+  background-color: #328912;
   width: 100%;
   height: 50px;
   text-align: center;
 }
 
 footer {
-  background-color: darkred;
+  background-color: #328912;
   width: 100%;
   height: 50px;
   text-align: center;
