@@ -58,7 +58,7 @@ main {
   align-items: center;
 }
 
-p {
+.p {
   text-align: center;
   background-color: #b0ded7;
   color: #00594c;
