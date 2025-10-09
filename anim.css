@@ -1,0 +1,179 @@
+:root {
+	--circle-expanded-size: 150px;
+	--circle-odd-delta: 100%;
+	--circle-even-delta: 200%;
+}
+
+/* ANIMATIONS */
+/* UP */
+
+.odd {
+	animation-duration: 1s;
+	animation-name: retractOdd;
+}
+
+.even {
+	animation-duration: 1s;
+	animation-name: retractEven;
+}
+
+.expandedOdd {
+	animation-duration: 1s;
+	animation-name: expandOdd;
+	width: var(--circle-expanded-size);
+	height: var(--circle-expanded-size);
+	top: calc(50% - (var(--circle-odd-delta)));
+}
+
+.expandedEven {
+	animation-duration: 1s;
+	animation-name: expandEven;
+	width: var(--circle-expanded-size);
+	height: var(--circle-expanded-size);
+	top: calc(50% - (var(--circle-even-delta)));
+}
+
+/* DOWN */
+
+.oddDown {
+	animation-duration: 1s;
+	animation-name: retractOddDown;
+}
+
+.evenDown {
+	animation-duration: 1s;
+	animation-name: retractEvenDown;
+}
+
+.expandedOddDown {
+	animation-duration: 1s;
+	animation-name: expandOddDown;
+	width: var(--circle-expanded-size);
+	height: var(--circle-expanded-size);
+	top: calc(50% + (var(--circle-odd-delta)));
+}
+
+.expandedEvenDown {
+	animation-duration: 1s;
+	animation-name: expandEvenDown;
+	width: var(--circle-expanded-size);
+	height: var(--circle-expanded-size);
+	top: calc(50% + (var(--circle-even-delta)));
+}
+
+/* KEYFRAMES */
+/* UP */
+
+@keyframes expandOdd {
+	0% {
+		top: 50%;
+		width: 50px;
+		height: 50px;
+	}
+
+	100% {
+		top: calc(50% - (var(--circle-odd-delta)));
+		width: var(--circle-expanded-size);
+		height: var(--circle-expanded-size);
+	}
+}
+
+@keyframes expandEven {
+	0% {
+		top: 50%;
+		width: 50px;
+		height: 50px;
+	}
+
+	100% {
+		top: calc(50% - (var(--circle-even-delta)));
+		width: var(--circle-expanded-size);
+		height: var(--circle-expanded-size);
+	}
+}
+
+@keyframes retractOdd {
+	0% {
+		top: calc(50% - (var(--circle-odd-delta)));
+		width: var(--circle-expanded-size);
+		height: var(--circle-expanded-size);
+	}
+
+	100% {
+		top: 50%;
+		width: 50px;
+		height: 50px;
+	}
+}
+
+@keyframes retractEven {
+	0% {
+		top: calc(50% - (var(--circle-even-delta)));
+		width: var(--circle-expanded-size);
+		height: var(--circle-expanded-size);
+	}
+
+	100% {
+		top: 50%;
+		width: 50px;
+		height: 50px;
+	}
+}
+
+/* DOWN */
+
+@keyframes expandOddDown {
+	0% {
+		top: 50%;
+		width: 50px;
+		height: 50px;
+	}
+
+	100% {
+		top: calc(50% + (var(--circle-odd-delta)));
+		width: var(--circle-expanded-size);
+		height: var(--circle-expanded-size);
+	}
+}
+
+@keyframes expandEvenDown {
+	0% {
+		top: 50%;
+		width: 50px;
+		height: 50px;
+	}
+
+	100% {
+		top: calc(50% + (var(--circle-even-delta)));
+		width: var(--circle-expanded-size);
+		height: var(--circle-expanded-size);
+	}
+}
+
+@keyframes retractOddDown {
+	0% {
+		top: calc(50% + (var(--circle-odd-delta)));
+		width: var(--circle-expanded-size);
+		height: var(--circle-expanded-size);
+	}
+
+	100% {
+		top: 50%;
+		width: 50px;
+		height: 50px;
+	}
+}
+
+@keyframes retractEvenDown {
+	0% {
+		top: calc(50% + (var(--circle-even-delta)));
+		width: var(--circle-expanded-size);
+		height: var(--circle-expanded-size);
+	}
+
+	100% {
+		top: 50%;
+		width: 50px;
+		height: 50px;
+	}
+}

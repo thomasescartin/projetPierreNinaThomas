@@ -29,6 +29,10 @@ body > div {
 	height: 100%;
 }
 
+.second_row {
+	grid-row-start: 2;
+}
+
 .circle {
 	background: #e6f6f4;
 	width: 50px;
@@ -38,89 +42,4 @@ body > div {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-}
-
-.odd {
-	animation-duration: 1s;
-	animation-name: retractOdd;
-}
-
-.even {
-	animation-duration: 1s;
-	animation-name: retractEven;
-}
-
-.circle:hover {
-}
-
-.expandedOdd {
-	animation-duration: 1s;
-	animation-name: expandOdd;
-	width: 150px;
-	height: 150px;
-	top: -50%;
-}
-
-.expandedEven {
-	animation-duration: 1s;
-	animation-name: expandEven;
-	width: 150px;
-	height: 150px;
-	top: -150%;
-}
-
-@keyframes expandOdd {
-	0% {
-		top: 50%;
-		width: 50px;
-		height: 50px;
-	}
-
-	100% {
-		top: -50%;
-		width: 150px;
-		height: 150px;
-	}
-}
-
-@keyframes expandEven {
-	0% {
-		top: 50%;
-		width: 50px;
-		height: 50px;
-	}
-
-	100% {
-		top: -150%;
-		width: 150px;
-		height: 150px;
-	}
-}
-
-@keyframes retractOdd {
-	0% {
-		top: -50%;
-		width: 150px;
-		height: 150px;
-	}
-
-	100% {
-		top: 50%;
-		width: 50px;
-		height: 50px;
-	}
-}
-
-@keyframes retractEven {
-	0% {
-		top: -150%;
-		width: 150px;
-		height: 150px;
-	}
-
-	100% {
-		top: 50%;
-		width: 50px;
-		height: 50px;
-	}
 }

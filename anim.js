@@ -11,5 +11,17 @@ function expandcircle(e) {
 		} else {
 			e.classList.add("expandedEven");
 		}
+	} else if (e.classList.contains("oddDown")) {
+		if (e.classList.contains("expandedOddDown")) {
+			e.classList.remove("expandedOddDown");
+		} else {
+			e.classList.add("expandedOddDown");
+		}
+	} else if (e.classList.contains("evenDown")) {
+		if (e.classList.contains("expandedEvenDown")) {
+			e.classList.remove("expandedEvenDown");
+		} else {
+			e.classList.add("expandedEvenDown");
+		}
 	}
 }
