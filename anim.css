@@ -1,202 +1,202 @@
 :root {
-	--circle-size: 30px;
-	--circle-expanded-size: 200px;
-	--circle-odd-delta: 200%;
-	--circle-even-delta: 350%;
+  --circle-size: 30px;
+  --circle-expanded-size: 250px;
+  --circle-odd-delta: 200%;
+  --circle-even-delta: 350%;
 }
 
 /* CONTAINER */
 
 .buttonContainer {
-	position: relative;
-	height: 80px;
-	width: 80px;
+  position: relative;
+  height: 80px;
+  width: 80px;
 }
 
 /* CIRCLE */
 
 .circle {
-	background: #e6f6f4;
-	width: var(--circle-size);
-	height: var(--circle-size);
-	border-radius: 50%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 50%;
+  background: #e6f6f4;
+  width: var(--circle-size);
+  height: var(--circle-size);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50%;
 }
 
 /* ANIMATIONS */
 /* UP */
 
 .odd {
-	animation-duration: 1s;
-	animation-name: retractOdd;
+  animation-duration: 1s;
+  animation-name: retractOdd;
 }
 
 .even {
-	animation-duration: 1s;
-	animation-name: retractEven;
+  animation-duration: 1s;
+  animation-name: retractEven;
 }
 
 .expandedOdd {
-	animation-duration: 1s;
-	animation-name: expandOdd;
-	width: var(--circle-expanded-size);
-	height: var(--circle-expanded-size);
-	top: calc(50% - (var(--circle-odd-delta)));
+  animation-duration: 1s;
+  animation-name: expandOdd;
+  width: var(--circle-expanded-size);
+  height: var(--circle-expanded-size);
+  top: calc(50% - (var(--circle-odd-delta)));
 }
 
 .expandedEven {
-	animation-duration: 1s;
-	animation-name: expandEven;
-	width: var(--circle-expanded-size);
-	height: var(--circle-expanded-size);
-	top: calc(50% - (var(--circle-even-delta)));
+  animation-duration: 1s;
+  animation-name: expandEven;
+  width: var(--circle-expanded-size);
+  height: var(--circle-expanded-size);
+  top: calc(50% - (var(--circle-even-delta)));
 }
 
 /* DOWN */
 
 .oddDown {
-	animation-duration: 1s;
-	animation-name: retractOddDown;
+  animation-duration: 1s;
+  animation-name: retractOddDown;
 }
 
 .evenDown {
-	animation-duration: 1s;
-	animation-name: retractEvenDown;
+  animation-duration: 1s;
+  animation-name: retractEvenDown;
 }
 
 .expandedOddDown {
-	animation-duration: 1s;
-	animation-name: expandOddDown;
-	width: var(--circle-expanded-size);
-	height: var(--circle-expanded-size);
-	top: calc(50% + (var(--circle-odd-delta)));
+  animation-duration: 1s;
+  animation-name: expandOddDown;
+  width: var(--circle-expanded-size);
+  height: var(--circle-expanded-size);
+  top: calc(50% + (var(--circle-odd-delta)));
 }
 
 .expandedEvenDown {
-	animation-duration: 1s;
-	animation-name: expandEvenDown;
-	width: var(--circle-expanded-size);
-	height: var(--circle-expanded-size);
-	top: calc(50% + (var(--circle-even-delta)));
+  animation-duration: 1s;
+  animation-name: expandEvenDown;
+  width: var(--circle-expanded-size);
+  height: var(--circle-expanded-size);
+  top: calc(50% + (var(--circle-even-delta)));
 }
 
 /* KEYFRAMES */
 /* UP */
 
 @keyframes expandOdd {
-	0% {
-		top: 50%;
-		width: var(--circle-size);
-		height: var(--circle-size);
-	}
+  0% {
+    top: 50%;
+    width: var(--circle-size);
+    height: var(--circle-size);
+  }
 
-	100% {
-		top: calc(50% - (var(--circle-odd-delta)));
-		width: var(--circle-expanded-size);
-		height: var(--circle-expanded-size);
-	}
+  100% {
+    top: calc(50% - (var(--circle-odd-delta)));
+    width: var(--circle-expanded-size);
+    height: var(--circle-expanded-size);
+  }
 }
 
 @keyframes expandEven {
-	0% {
-		top: 50%;
-		width: var(--circle-size);
-		height: var(--circle-size);
-	}
+  0% {
+    top: 50%;
+    width: var(--circle-size);
+    height: var(--circle-size);
+  }
 
-	100% {
-		top: calc(50% - (var(--circle-even-delta)));
-		width: var(--circle-expanded-size);
-		height: var(--circle-expanded-size);
-	}
+  100% {
+    top: calc(50% - (var(--circle-even-delta)));
+    width: var(--circle-expanded-size);
+    height: var(--circle-expanded-size);
+  }
 }
 
 @keyframes retractOdd {
-	0% {
-		top: calc(50% - (var(--circle-odd-delta)));
-		width: var(--circle-expanded-size);
-		height: var(--circle-expanded-size);
-	}
+  0% {
+    top: calc(50% - (var(--circle-odd-delta)));
+    width: var(--circle-expanded-size);
+    height: var(--circle-expanded-size);
+  }
 
-	100% {
-		top: 50%;
-		width: var(--circle-size);
-		height: var(--circle-size);
-	}
+  100% {
+    top: 50%;
+    width: var(--circle-size);
+    height: var(--circle-size);
+  }
 }
 
 @keyframes retractEven {
-	0% {
-		top: calc(50% - (var(--circle-even-delta)));
-		width: var(--circle-expanded-size);
-		height: var(--circle-expanded-size);
-	}
+  0% {
+    top: calc(50% - (var(--circle-even-delta)));
+    width: var(--circle-expanded-size);
+    height: var(--circle-expanded-size);
+  }
 
-	100% {
-		top: 50%;
-		width: var(--circle-size);
-		height: var(--circle-size);
-	}
+  100% {
+    top: 50%;
+    width: var(--circle-size);
+    height: var(--circle-size);
+  }
 }
 
 /* DOWN */
 
 @keyframes expandOddDown {
-	0% {
-		top: 50%;
-		width: var(--circle-size);
-		height: var(--circle-size);
-	}
+  0% {
+    top: 50%;
+    width: var(--circle-size);
+    height: var(--circle-size);
+  }
 
-	100% {
-		top: calc(50% + (var(--circle-odd-delta)));
-		width: var(--circle-expanded-size);
-		height: var(--circle-expanded-size);
-	}
+  100% {
+    top: calc(50% + (var(--circle-odd-delta)));
+    width: var(--circle-expanded-size);
+    height: var(--circle-expanded-size);
+  }
 }
 
 @keyframes expandEvenDown {
-	0% {
-		top: 50%;
-		width: var(--circle-size);
-		height: var(--circle-size);
-	}
+  0% {
+    top: 50%;
+    width: var(--circle-size);
+    height: var(--circle-size);
+  }
 
-	100% {
-		top: calc(50% + (var(--circle-even-delta)));
-		width: var(--circle-expanded-size);
-		height: var(--circle-expanded-size);
-	}
+  100% {
+    top: calc(50% + (var(--circle-even-delta)));
+    width: var(--circle-expanded-size);
+    height: var(--circle-expanded-size);
+  }
 }
 
 @keyframes retractOddDown {
-	0% {
-		top: calc(50% + (var(--circle-odd-delta)));
-		width: var(--circle-expanded-size);
-		height: var(--circle-expanded-size);
-	}
+  0% {
+    top: calc(50% + (var(--circle-odd-delta)));
+    width: var(--circle-expanded-size);
+    height: var(--circle-expanded-size);
+  }
 
-	100% {
-		top: 50%;
-		width: var(--circle-size);
-		height: var(--circle-size);
-	}
+  100% {
+    top: 50%;
+    width: var(--circle-size);
+    height: var(--circle-size);
+  }
 }
 
 @keyframes retractEvenDown {
-	0% {
-		top: calc(50% + (var(--circle-even-delta)));
-		width: var(--circle-expanded-size);
-		height: var(--circle-expanded-size);
-	}
+  0% {
+    top: calc(50% + (var(--circle-even-delta)));
+    width: var(--circle-expanded-size);
+    height: var(--circle-expanded-size);
+  }
 
-	100% {
-		top: 50%;
-		width: var(--circle-size);
-		height: var(--circle-size);
-	}
+  100% {
+    top: 50%;
+    width: var(--circle-size);
+    height: var(--circle-size);
+  }
 }
