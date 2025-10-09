@@ -1,7 +1,22 @@
 :root {
-	--circle-expanded-size: 150px;
-	--circle-odd-delta: 100%;
-	--circle-even-delta: 200%;
+	--circle-size: 30px;
+	--circle-expanded-size: 200px;
+	--circle-odd-delta: 300%;
+	--circle-even-delta: 700%;
+}
+
+/* CIRCLE */
+
+.circle {
+	background: #e6f6f4;
+	width: var(--circle-size);
+	height: var(--circle-size);
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 50%;
 }
 
 /* ANIMATIONS */
@@ -67,8 +82,8 @@
 @keyframes expandOdd {
 	0% {
 		top: 50%;
-		width: 50px;
-		height: 50px;
+		width: var(--circle-size);
+		height: var(--circle-size);
 	}
 
 	100% {
@@ -81,8 +96,8 @@
 @keyframes expandEven {
 	0% {
 		top: 50%;
-		width: 50px;
-		height: 50px;
+		width: var(--circle-size);
+		height: var(--circle-size);
 	}
 
 	100% {
@@ -101,8 +116,8 @@
 
 	100% {
 		top: 50%;
-		width: 50px;
-		height: 50px;
+		width: var(--circle-size);
+		height: var(--circle-size);
 	}
 }
 
@@ -115,8 +130,8 @@
 
 	100% {
 		top: 50%;
-		width: 50px;
-		height: 50px;
+		width: var(--circle-size);
+		height: var(--circle-size);
 	}
 }
 
@@ -125,8 +140,8 @@
 @keyframes expandOddDown {
 	0% {
 		top: 50%;
-		width: 50px;
-		height: 50px;
+		width: var(--circle-size);
+		height: var(--circle-size);
 	}
 
 	100% {
@@ -139,8 +154,8 @@
 @keyframes expandEvenDown {
 	0% {
 		top: 50%;
-		width: 50px;
-		height: 50px;
+		width: var(--circle-size);
+		height: var(--circle-size);
 	}
 
 	100% {
@@ -159,8 +174,8 @@
 
 	100% {
 		top: 50%;
-		width: 50px;
-		height: 50px;
+		width: var(--circle-size);
+		height: var(--circle-size);
 	}
 }
 
@@ -173,7 +188,7 @@
 
 	100% {
 		top: 50%;
-		width: 50px;
-		height: 50px;
+		width: var(--circle-size);
+		height: var(--circle-size);
 	}
 }
