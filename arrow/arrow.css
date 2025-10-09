@@ -71,12 +71,7 @@ p {
   border-radius: 50%;
 }
 
-#alignTop {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-#alignBottom {
+#arrow_body > div {
   display: flex;
   justify-content: space-evenly;
 }
